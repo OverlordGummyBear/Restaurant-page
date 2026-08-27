@@ -4,4 +4,7 @@ import loadAbout from "./pages/about.js";
 import loadHome from "./pages/home.js";
 
 const contentDiv = document.querySelector("#content");
+
+document.querySelectorAll("button")
+
 contentDiv.appendChild(loadHome());
