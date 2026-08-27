@@ -8,6 +8,12 @@
     --dark-blue-clr: #051650;
     --neon-light-clr: #0ff;   /* electric cyan */
      --neon-dark-clr: #b300ff; /* deep neon purple/magenta */
+
+     --neon-glow-light:
+            0 0 5px var(--neon-dark-clr),
+            0 0 10px var(--neon-dark-clr),
+            0 0 20px var(--neon-dark-clr),
+            0 0 40px var(--neon-dark-clr);
 }
 
 body, html{
@@ -63,6 +69,13 @@ button {
   background-color: var(--light-blue-clr);
   font-family: "Corpta", sans-serif;
   color: white;
+}
+
+button:hover{
+    background-color: #051650;
+    cursor: pointer;
+    box-shadow: var(--neon-glow-light);
+    border: none;
 }
 
 /*content container*/
